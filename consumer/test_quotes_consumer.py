@@ -1,4 +1,3 @@
-import json
 from quotes_consumer import QuoteConsumer
 
 PACT_MOCK_HOST = "localhost"

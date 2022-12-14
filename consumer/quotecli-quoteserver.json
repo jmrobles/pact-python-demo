@@ -1,0 +1,52 @@
+{
+  "consumer": {
+    "name": "QuoteCLI"
+  },
+  "provider": {
+    "name": "QuoteServer"
+  },
+  "interactions": [
+    {
+      "description": "a request for the quote",
+      "providerState": "A fixed quote",
+      "request": {
+        "method": "get",
+        "path": "/api/v1/quotes"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": {
+          "quote": "A quote",
+          "author": "Anonymous"
+        }
+      }
+    },
+    {
+      "description": "a request for adding the new quote",
+      "providerState": "A quote to add",
+      "request": {
+        "method": "post",
+        "path": "/api/v1/quotes",
+        "headers": {
+          "Content-type": "application/json"
+        },
+        "body": {
+          "quote": "To test or to test",
+          "author": "A tester"
+        }
+      },
+      "response": {
+        "status": 201,
+        "headers": {
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

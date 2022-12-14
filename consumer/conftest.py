@@ -6,9 +6,6 @@ import pytest
 from pact import Consumer, Provider
 
 PACT_BROKER_URL = "http://localhost:9292"
-# PACT_BROKER_USERNAME = "pactbroker"
-# PACT_BROKER_PASSWORD = "pactbroker"
-
 PACT_MOCK_HOST = "localhost"
 PACT_MOCK_PORT = 1234
 

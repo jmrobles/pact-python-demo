@@ -1,0 +1,4 @@
+pact-python
+requests
+pytest
+fastapi

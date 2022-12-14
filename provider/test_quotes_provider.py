@@ -1,4 +1,3 @@
-import sys
 from multiprocessing import Process
 
 import pytest
@@ -6,12 +5,6 @@ from pact import Verifier
 
 from pact_quotes_server import run_server
 
-# # Load in the fixtures from common/sharedfixtures.py
-# sys.path.append("../common")
-
-# pytest_plugins = [
-#     "sharedfixtures",
-# ]
 
 PACT_BROKER_URL = "http://localhost:9292"
 PROVIDER_URL = "http://localhost:8000"
